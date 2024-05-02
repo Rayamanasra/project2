@@ -1,0 +1,117 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_accessControlAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_voter",
+						"type": "address"
+					}
+				],
+				"name": "VoterRegistered",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "accessControl",
+				"outputs": [
+					{
+						"internalType": "contract AccessControl",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_voter",
+						"type": "address"
+					}
+				],
+				"name": "isRegisteredVoter",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "registerVoter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/VoterReg.sol": "VoterRegistrationContract"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AccessControl.sol": {
+			"keccak256": "0x08b7a63e063e9dc4775b2b8c9c328d16706971dfa5b9b354b870fe2a24e1a30a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cefea46141aa7ab7238b1c14bddb6442b2a0095a4a36d496a3ef3f5a90511ead",
+				"dweb:/ipfs/QmNzUsjQtLjK7oaHqZLqRTicGi9gktrouba9HnyNs5ExJA"
+			]
+		},
+		"contracts/VoterReg.sol": {
+			"keccak256": "0xdbbb9a8d576d2143cad23372b3e7649a486ad6451321800c8df92fb609df4b2f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://19d5e519062db99953e051f7ac22345b885040c7e9a2ad0fcfbc5542cd5726ec",
+				"dweb:/ipfs/QmYKzGbZjpN1oqZzLZ3tJzhNr7Ted2TewzHMpSnkRTUzjw"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,117 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_accessControlAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address[]",
+						"name": "_candidateAddresses",
+						"type": "address[]"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256[]",
+						"name": "_voteCounts",
+						"type": "uint256[]"
+					}
+				],
+				"name": "ElectionResultFinalized",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "accessControl",
+				"outputs": [
+					{
+						"internalType": "contract AccessControl",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "electionResult",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "finalized",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "finalizeResult",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ResultTally.sol": "ResultTallyContract"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AccessControl.sol": {
+			"keccak256": "0x411bfc32b6f3c39b9ead60a28ac26f1942e203eeaddf82dedd5c2521f814b829",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0a1dbe42794fb7034cb96fd0095179cf16c2c5cb50de608a7f75d69c55fdf4b7",
+				"dweb:/ipfs/QmVyzrnawEHWg4mNWHhFpkNSVYbwzoTpCTy7427aWDyNme"
+			]
+		},
+		"contracts/ResultTally.sol": {
+			"keccak256": "0x07f54f180e995b18931e35cd9a51845450c423643b19105bb995dee01bc250ce",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f643163185b35a1766f67f25376a22431a69a504b69cc7bab33285af919429f9",
+				"dweb:/ipfs/QmYjEYaySPAQ8NWAqt9RnMfWD3FWKcpHbYCTeMppLrNmbk"
+			]
+		}
+	},
+	"version": 1
+}

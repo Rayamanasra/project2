@@ -1,0 +1,121 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_accessControlAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "CandidateRegistered",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "accessControl",
+				"outputs": [
+					{
+						"internalType": "contract AccessControl",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "registerCandidate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Candidatesreg.sol": "CandidateRegistrationContract"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AccessControl.sol": {
+			"keccak256": "0xa3d67464e5aefba8319c10438c484197ad22b079031fe5c71e0c706149265cb3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c8cc5327371d09439ccae282de7761e0eeed59c4cd2ad32b0ef515e052e3a892",
+				"dweb:/ipfs/QmR9EeUgQGwSPtPeGAZoMKKrKYpUktCy3cRNkBXDLk6fS9"
+			]
+		},
+		"contracts/Candidatesreg.sol": {
+			"keccak256": "0x970f35bef844966481646431257c1aaf5e7079997f1a67fee1c2d97807795fd4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c416d525a89216dcd70713eaab330a122ad790de6b4fa3762821fcb26b3b9150",
+				"dweb:/ipfs/QmcTK8yxiyYTpRfJYvuGvAYdC8SceAXAMksxhwErRMDk6P"
+			]
+		}
+	},
+	"version": 1
+}
